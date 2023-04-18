@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-color {
+    background-color: rgb(188, 242, 255);
+}
+
+header {
+    background-color: rgb(6, 6, 70);
+    border-bottom: 3px solid rgb(3, 3, 32);
+    padding: 10px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex: 0 1 100%;
+} 
+
+.navbar-menu li{
+    padding: 6px;
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.navbar-start {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    box-shadow: 0 0 25px rgb(255, 208, 0);
+    padding: 6px;
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.navbar-menu li:nth-child(1) {
+    box-shadow: 0 0 25px #4f9;
+}
+
+.navbar-menu li:nth-child(2) {
+    box-shadow: 0 0 25px rgb(255, 88, 27);
+}
+
+.navbar-menu li:nth-child(3) {
+    box-shadow: 0 0 25px rgb(253, 1, 253);
+}
+
+.navbar-menu li:nth-child(4) {
+    box-shadow: 0 0 25px rgb(28, 201, 253);
+}
+
+.navbar-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-start a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.icon-navbar img {
+    width: 44px;
+    height: 44px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    height: 44px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 0 1 100%;
+}
+
+.main-image-container {
+    width: 400px;
+    margin: 80px;
+}
+
+.main-image-container img {
+    width: 100%;
+}
+
+.main-text {
+    padding: 40px;
+    margin: 60px;
+    background-color: darkcyan;
+    font-family: monospace;
+    border: 4px solid rgb(15, 94, 94);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.main-text h1 {
+    font-size: 2rem;
+}
+
+.main-text p {
+    font-size: 24px;
+    color: black;
+}
+
+.main-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.noticias-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulos-barras {
+    display: flex;
+    justify-content: center;
+
+    font-family: monospace;
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: rgb(207, 207, 207);
+    border: 3px solid silver;
+}
+
+.contenedor-noticias {
+    font-family: monospace;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tarjetas-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(2, 2, 73);
+    width: 450px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.tarjetas-noticias h3 {
+    width: 350px;
+    text-align: center;
+    background-color: azure;
+}
+
+.tarjetas-noticias a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-imagen-noticias {
+    width: 350px;
+}
+
+.contenedor-imagen-noticias img {
+    width: 100%;
+}
+
+.main-videojuegos {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 0 100%;
+}
+
+.categorias-videojuegos {
+    width: 210px;
+    padding: 30px;
+    background-color: darkcyan;
+    border-right: 3px solid rgb(14, 112, 112);
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.categorias-videojuegos h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.categorias-videojuegos li {
+    font-size: 1rem;
+}
+
+.tarjetas-videojuegos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: rgb(37, 65, 189);
+    width: 250px;
+    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+.contenedor-imagen-videojuegos {
+    width: 150px;
+}
+
+.contenedor-imagen-videojuegos img {
+    width: 100%;
+}
+
+.contenedor-videojuegos {
+    font-family: monospace;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-triangulo {
+    width: 80px;
+}
+
+.contenedor-triangulo img {
+    width: 100%;
+}
+
+.main-companias {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contenedor-companias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas-companias {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: rgb(124, 0, 0);
+    margin: 20px;
+    padding: 20px;
+}
+
+.compania-descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    color: azure;
+    padding: 20;
+    gap: 20px;
+}
+
+.compania-descripcion h2 {
+    background-color: crimson;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.compania-fav {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.companias-fav h3 {
+    font-size: 12px;
+    color: azure;
+    padding: 10px;
+    background-color: crimson;
+    width: 100px;
+}
+
+.contenedor-imagen-companias {
+    width: 100px;
+}
+
+.contenedor-imagen-companias img {
+    width: 100%;
+}
+
+
+
+
+.tarjetas-companias-sony {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: rgb(1, 10, 51);
+    margin: 20px;
+    padding: 20px;
+}
+
+.compania-descripcionSony {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    color: azure;
+    padding: 20;
+    gap: 20px;
+}
+
+.compania-descripcionSony h2 {
+    background-color: rgb(36, 158, 214);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.compania-favSony {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.companias-favSony h3 {
+    font-size: 12px;
+    color: azure;
+    padding: 10px;
+    background-color: rgb(36, 158, 214);
+    width: 100px;
+}
+
+
+
+
+.tarjetas-companias-sega {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: rgb(8, 36, 158);
+    margin: 20px;
+    padding: 20px;
+}
+
+.compania-descripcionSega {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    color: azure;
+    padding: 20;
+    gap: 20px;
+}
+
+.compania-descripcionSega h2 {
+    background-color: rgb(56, 74, 235);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.compania-favSega {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.companias-favSega h3 {
+    font-size: 12px;
+    color: azure;
+    padding: 10px;
+    background-color: rgb(56, 74, 235);
+    width: 100px;
+}
+
+
+
+.main-contacto {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(34, 78, 209);
+    border: 3px solid darkblue;
+    width: 520px;
+    padding: 20px;
+    margin-bottom: 15px;
+    /* margin: 20px; */
+}
+
+.contenedor-contacto h2 {
+    font-size: 18px;
+}
+
+.contenedor-contacto p {
+    text-align: center;
+}
+
+.contenedor-formulario {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 78, 209);
+    border: 3px solid darkblue;
+    color: azure;
+}
+
+.formulario {
+    font-size: 1.3em;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.boton_container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    background-color: rgb(0, 0, 79);
+    margin-bottom: 15px;
+    border: 3px solid rgb(0, 0, 37);
+    width: 82px;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contenedor-imagen-contacto {
+    max-width: 700px;
+    padding: 10px;
+}
+
+.contenedor-imagen-contacto img {
+    width: 100%;
+}
+
+
+
+
+footer {
+    background-color: rgb(6, 6, 70);
+    border-top: 3px solid rgb(3, 3, 32);
+    padding: 8px;
+
+    max-height: min-content;
+}
+
+.icon-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: silver;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.icon-container img {
+    width: 100%;
+}
