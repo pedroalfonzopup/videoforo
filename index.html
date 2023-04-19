@@ -6,27 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Dictator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="body-color">
 
-    <header>
-        <nav class="navbar">
+    <nav class="navbar navbar-expand-lg header-p">
+        <div class="container-fluid navbar-p">
             <div class="icon-navbar">
                 <img src="./img/gameLoveIcon.png" alt="Icono">
             </div>
             <div class="navbar-start">
-                <li><a href="./index.html">START</a></li>
+                <a href="./index.html">START</a>
             </div>
-            <ul class="navbar-menu">
-                <li><a href="./pages/noticias.html">Noticias</a></li>
-                <li><a href="./pages/companias.html">Compañias</a></li>
-                <li><a href="./pages/videojuegos.html">Videojuegos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Videojuegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <section class="main-container">

@@ -8,7 +8,7 @@
     background-color: rgb(188, 242, 255);
 }
 
-header {
+.header-p {
     background-color: rgb(6, 6, 70);
     border-bottom: 3px solid rgb(3, 3, 32);
     padding: 10px;
@@ -24,13 +24,18 @@ header {
     flex: 0 1 100%;
 } 
 
-.navbar-menu li{
+.navbar-menu li {
     padding: 6px;
     color: rgb(255, 255, 255);
     border: solid 1px rgb(255, 255, 255);
     border-radius: 5px;
     font-family: monospace;
     font-size: 1rem;
+}
+
+.navbar-menu li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .navbar-start {
@@ -80,10 +85,11 @@ header {
     height: 44px;
 }
 
-.navbar {
+.navbar-p {
     display: flex;
-    justify-content: space-around;
-    gap: 200px;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 100px;
     height: 44px;
 }
 
@@ -118,6 +124,8 @@ header {
 
 .main-text h1 {
     font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
 }
 
 .main-text p {
@@ -531,4 +539,88 @@ footer {
 
 .icon-container img {
     width: 100%;
+}
+
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+
+@media screen and (max-width: 1024px) {
+    .navbar-p {
+        gap: 70px;
+    }
+
+    .navbar-toggler {
+        color: white;
+        box-shadow: 0 0 25px rgb(255, 208, 0);
+        color: rgb(255, 255, 255);
+        border: solid 1px rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    
+    .navbar-nav {
+        border: rgb(16, 4, 83) 3px solid;
+        background-color: rgb(6, 6, 70); 
+        width: 300px;
+        position: absolute;
+        right: 5px;
+        top: 65px;
+        padding: 5px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    .nav-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-text p{
+        font-size: 18px;
+    }
+
+    .main-tex h1{
+        font-size: 1rem;
+    }
+
+    .main-image-container {
+        width: 400px;
+    }
+}
+
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+
+
+@media screen and (max-width: 600px) {
+    .main-image-container {
+        width: 200px;
+        margin: 10;
+    }
+
+    .navbar-nav {
+        width: 200px;
+    }
+
+    .nav-link {
+        font-size: x-large;
+    }
 }
