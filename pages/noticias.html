@@ -5,67 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Dictator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="body-color">
     <header>
-        <nav class="navbar">
-            <div class="icon-navbar">
-                <img src="../img/gameLoveIcon.png" alt="Icono">
+        <nav class="navbar navbar-expand-lg header-p">
+            <div class="container-fluid navbar-p">
+                <div class="icon-navbar">
+                    <img src="../img/gameLoveIcon.png" alt="Icono">
+                </div>
+                <div class="navbar-start">
+                    <a href="../index.html">START</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./companias.html">Companias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./videojuegos.html">Videojuegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-start">
-                <li><a href="../index.html">START</a></li>
-            </div>
-            <ul class="navbar-menu">
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./companias.html">Compañias</a></li>
-                <li><a href="./videojuegos.html">Videojuegos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
         </nav>
     </header>
+
     <main>
         <div class="noticias-main">
             <div class="titulos-barras">
                 <h1>UP-COMING NEWS</h1>
             </div>
-            <div class="contenedor-noticias">
-                    <div class="tarjetas-noticias">
-                        <a href="https://vandal.elespanol.com/noticia/1350761228/los-graficos-de-final-fantasy-16-son-posibles-gracias-al-ssd-de-ps5-afirma-square-enix/">
-                        <div class="contenedor-imagen-noticias">
-                            <img src="../img/noticiaFF.jpg" alt="Final Fantasy 16 con una playstation 5">
+            <div class="container contenedor-noticias">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="tarjetas-noticias">
+                            <a href="https://vandal.elespanol.com/noticia/1350761228/los-graficos-de-final-fantasy-16-son-posibles-gracias-al-ssd-de-ps5-afirma-square-enix/">
+                            <div class="contenedor-imagen-noticias">
+                                <img src="../img/noticiaFF.jpg" alt="Final Fantasy 16 con una playstation 5">
+                            </div>
+                            <h3>Los gráficos de Final Fantasy 16 son posibles gracias al SSD de PS5</h3>
+                            </a>
                         </div>
-                        <h3>Los gráficos de Final Fantasy 16 son posibles gracias al SSD de PS5</h3>
-                        </a>
                     </div>
-                    <div class="tarjetas-noticias">
-                        <a href="https://vandal.elespanol.com/noticia/1350761210/el-e3-2023-confirma-su-cancelacion-por-cuarto-ano-consecutivo/">
-                        <div class="contenedor-imagen-noticias">
-                            <img src="../img/noticiaGameConvention.jpg" alt="Cancelación E3">
+                    <div class="carousel-item">
+                        <div class="tarjetas-noticias">
+                            <a href="https://vandal.elespanol.com/noticia/1350761210/el-e3-2023-confirma-su-cancelacion-por-cuarto-ano-consecutivo/">
+                            <div class="contenedor-imagen-noticias">
+                                <img src="../img/noticiaGameConvention.jpg" alt="Cancelación E3">
+                            </div>
+                            <h3>El E3 2023 es cancelado, aun se esperan razones concisas, nuevo aviso
+                            </h3>
+                            </a>
                         </div>
-                        <h3>El E3 2023 es cancelado definitivamente, tanto el evento presencial como el digital
-                        </h3>
-                        </a>
-                        </div>
-                    <div class="tarjetas-noticias">
-                        <a href="https://vandal.elespanol.com/noticia/1350761219/vampire-survivors-gana-el-premio-a-mejor-juego-en-los-bafta-games-awards-2023/">
-                        <div class="contenedor-imagen-noticias">
-                            <img src="../img/noticiaVampireSurvivors.jpg" alt="Arte de Vampire Survivors">
-                        </div>
-                        <h3>Vampire Survivors gana el premio a Mejor Juego en los BAFTA Games Awards 2023</h3>
-                        </a>
                     </div>
-                    <div class="tarjetas-noticias">
-                        <a href="https://vandal.elespanol.com/noticia/1350761146/resident-evil-4-remake-supera-los-3-millones-de-copias-vendidas-en-sus-dos-primeros-dias/">
-                        <div class="contenedor-imagen-noticias">
-                            <img src="../img/noticiaResidentEvil.jpg" alt="Captura de Resident Evil 4 Remake">
-                        </div>
-                        <h3>Resident Evil 4 Remake supera los 3 millones de copias vendidas en sus dos primeros días</h3>
-                        </a>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div id="secondCarousel" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="tarjetas-noticias">
+                            <a href="https://vandal.elespanol.com/noticia/1350761219/vampire-survivors-gana-el-premio-a-mejor-juego-en-los-bafta-games-awards-2023/">
+                            <div class="contenedor-imagen-noticias">
+                                <img src="../img/noticiaVampireSurvivors.jpg" alt="Arte de Vampire Survivors">
+                            </div>
+                            <h3>Vampire Survivors gana el premio a Mejor Juego en los BAFTA Games Awards 2023</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="tarjetas-noticias">
+                            <a href="https://vandal.elespanol.com/noticia/1350761146/resident-evil-4-remake-supera-los-3-millones-de-copias-vendidas-en-sus-dos-primeros-dias/">
+                            <div class="contenedor-imagen-noticias">
+                                <img src="../img/noticiaResidentEvil.jpg" alt="Captura de Resident Evil 4 Remake">
+                            </div>
+                            <h3>Resident Evil 4 Remake supera los 3 millones de copias vendidas los primeros días</h3>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#secondCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#secondCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
+
     <footer>
         <div class="icon-footer">
             <div class="icon-container">
@@ -79,5 +131,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

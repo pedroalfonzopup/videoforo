@@ -12,6 +12,8 @@
     background-color: rgb(6, 6, 70);
     border-bottom: 3px solid rgb(3, 3, 32);
     padding: 10px;
+
+    z-index: 2;
 }
 
 .navbar-menu {
@@ -159,8 +161,11 @@
 .contenedor-noticias {
     font-family: monospace;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    gap: 30px;
 }
 
 .tarjetas-noticias {
@@ -170,13 +175,12 @@
     align-items: center;
 
     background-color: rgb(2, 2, 73);
-    width: 450px;
     padding: 20px;
     margin: 50px;
 }
 
 .tarjetas-noticias h3 {
-    width: 350px;
+    width: 550px;
     text-align: center;
     background-color: azure;
 }
@@ -187,7 +191,7 @@
 }
 
 .contenedor-imagen-noticias {
-    width: 350px;
+    width: 550px;
 }
 
 .contenedor-imagen-noticias img {
@@ -271,7 +275,7 @@
     align-items: center;
 }
 
-.tarjetas-companias {
+/* .tarjetas-companias {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -279,154 +283,224 @@
     background-color: rgb(124, 0, 0);
     margin: 20px;
     padding: 20px;
+} */
+
+.tarjetas-companias-N {
+    background-color: rgb(124, 0, 0);
+    margin: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "tiN   .   .   .   favN"
+    "desN   desN   desN   .   imgN"
+    "desN   desN   desN   .   imgN"
+    ;
 }
 
-.compania-descripcion {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
+.compania-descripcion-N {
+    width: 700px;
     color: azure;
-    padding: 20;
-    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+
+    grid-area: desN;
 }
 
-.compania-descripcion h2 {
+.encabezado-N {
     background-color: crimson;
+    color: azure;
     padding: 10px;
-    width: 150px;
-    text-align: center;
-}
-
-.compania-fav {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    
+
+    grid-area: tiN;
 }
 
-.companias-fav h3 {
+.fav-N {
     font-size: 12px;
     color: azure;
     padding: 10px;
     background-color: crimson;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: favN;
+    
 }
 
-.contenedor-imagen-companias {
-    width: 100px;
+
+.contenedor-imagen-companias-N {
+    grid-area: imgN;
 }
 
-.contenedor-imagen-companias img {
+.contenedor-imagen-companias-N img {
     width: 100%;
 }
 
 
 
 
-.tarjetas-companias-sony {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
 
+
+
+
+
+
+
+
+.tarjetas-companias-SO {
     background-color: rgb(1, 10, 51);
     margin: 20px;
     padding: 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "tiSO   .   .   .   favSO"
+    "desSO   desSO   desSO   .   imgSO"
+    "desSO   desSO   desSO   .   imgSO"
+    ;
 }
 
-.compania-descripcionSony {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
+.compania-descripcion-SO {
+    width: 700px;
     color: azure;
-    padding: 20;
-    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+
+    grid-area: desSO;
 }
 
-.compania-descripcionSony h2 {
+.encabezado-SO {
     background-color: rgb(36, 158, 214);
+    color: azure;
     padding: 10px;
-    width: 150px;
-    text-align: center;
-}
-
-.compania-favSony {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: tiSO;
 }
 
-.companias-favSony h3 {
+.fav-SO {
     font-size: 12px;
     color: azure;
     padding: 10px;
     background-color: rgb(36, 158, 214);
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: favSO;
+}
+
+.contenedor-imagen-companias-SO {
+    grid-area: imgSO;
+}
+
+.contenedor-imagen-companias-SO img {
+    width: 100%;
 }
 
 
 
 
-.tarjetas-companias-sega {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
 
+
+
+
+
+
+
+
+
+
+.tarjetas-companias-SE {
     background-color: rgb(8, 36, 158);
     margin: 20px;
     padding: 20px;
-}
-
-.compania-descripcionSega {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    color: azure;
-    padding: 20;
-    gap: 20px;
-}
-
-.compania-descripcionSega h2 {
-    background-color: rgb(56, 74, 235);
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-}
-
-.compania-favSega {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
     
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "tiSE   .   .   .   favSE"
+    "desSE   desSE   desSE   .   imgSE"
+    "desSE   desSE   desSE   .   imgSE"
+    ;
 }
 
-.companias-favSega h3 {
+.compania-descripcion-SE {
+    width: 700px;
+    color: azure;
+    padding: 20px;
+    font-size: 20px;
+
+    grid-area: desSE;
+}
+
+.encabezado-SE {
+    background-color: rgb(56, 74, 235);
+    color: azure;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: tiSE;
+}
+
+.fav-SE {
     font-size: 12px;
     color: azure;
     padding: 10px;
     background-color: rgb(56, 74, 235);
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: favSE;
 }
+
+.contenedor-imagen-companias-SE {
+    grid-area: imgSE;
+}
+
+.contenedor-imagen-companias-SE img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .main-contacto {
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 25px;
     margin-top: 30px;
-    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 
     font-family: 'Courier New', Courier, monospace;
     color: azure;
@@ -442,7 +516,6 @@
     width: 520px;
     padding: 20px;
     margin-bottom: 15px;
-    /* margin: 20px; */
 }
 
 .contenedor-contacto h2 {
@@ -451,6 +524,7 @@
 
 .contenedor-contacto p {
     text-align: center;
+    font-size: 16px;
 }
 
 .contenedor-formulario {
@@ -502,7 +576,6 @@
 }
 
 .contenedor-imagen-contacto {
-    max-width: 700px;
     padding: 10px;
 }
 
@@ -601,6 +674,30 @@ footer {
     .main-image-container {
         width: 400px;
     }
+
+    .compania-descripcion-N {
+        font-size: 14px;
+        width: 550px;
+    }
+
+    .compania-descripcion-SE {
+        font-size: 14px;
+        width: 550px;
+    }
+
+    .compania-descripcion-SO {
+        font-size: 14px;
+        width: 550px;
+    }
+
+    .main-contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-contacto {
+        width: 450px;
+    }
 }
 
 /* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
@@ -622,5 +719,89 @@ footer {
 
     .nav-link {
         font-size: x-large;
+    }
+
+
+
+    .contenedor-imagen-noticias {
+        width: 200px;
+    }
+
+    .tarjetas-noticias h3 {
+        width: 200px;
+    }
+
+
+    .fav-N {
+        display: none;
+    }
+
+    .fav-SO {
+        display: none;
+    }
+
+    .fav-SE {
+        display: none;
+    }
+
+    .contenedor-imagen-companias-N {
+        display: none;
+    }
+
+    .contenedor-imagen-companias-SO {
+        display: none;
+    }
+
+    .contenedor-imagen-companias-SE {
+        display: none;
+    }
+
+    .compania-descripcion-N {
+        width: 300px;
+    }
+
+    .compania-descripcion-SE {
+        width: 300px;
+    }
+
+    .compania-descripcion-SO {
+        width: 300px;
+    }
+
+    .tarjetas-companias-N {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjetas-companias-SE {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjetas-companias-SO {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-contacto {
+        width: 350px;
+    }
+
+    .contenedor-contacto h2 {
+        font-size: 12px;
+    }
+
+    .contenedor-contacto p {
+        font-size: 10px;
+    }
+    
+    .categorias-videojuegos {
+        display: none;
     }
 }
