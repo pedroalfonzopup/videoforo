@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(188, 242, 255);
+    font-family: monospace;
+    & a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+}
+
+.titulosBarras {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    padding: 20px;
+
+    background-color: $color_titulos;
+    border: 6px solid $color_titulosBordes;
+
+    & h1 {
+        font-weight: 800;
+
+        animation-name: titulo;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+@keyframes titulo{
+    0%{
+        color: rgb(23, 0, 155);
+    }
+
+    25%{
+        color:aqua;
+    }
+
+    50%{
+        color: rgb(1, 19, 78);
+    }
+
+    75%{
+        color: aqua;
+    }
+
+    100%{
+        color: rgb(23, 0, 155);
+    }
+}

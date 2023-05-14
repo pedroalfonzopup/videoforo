@@ -1,0 +1,171 @@
+.N {
+    &--compania {
+        &__tarjetas {
+            background-color: $nintendoF;
+            margin: 20px;
+            padding: 20px;
+        
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "tiN   .   .   .   favN"
+            "desN   desN   desN   .   imgN"
+            "desN   desN   desN   .   imgN"
+            ;
+        }
+        &__descripcion {
+            width: 700px;
+            color: azure;
+            padding: 20px;
+            font-size: 20px;
+        
+            grid-area: desN;
+        }
+    }
+
+    &--contenedorImagen {
+        grid-area: imgN;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &--fav {
+        font-size: 12px;
+        color: azure;
+        padding: 10px;
+        background-color: $nintendoT;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        grid-area: favN;
+    }
+
+    &--encabezado {
+        background-color: $nintendoT;
+        color: azure;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        grid-area: tiN;
+    }
+}
+
+.SO {
+    &--compania {
+        &__tarjetas {
+            background-color: $sonyF;
+            margin: 20px;
+            padding: 20px;
+        
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "tiSO   .   .   .   favSO"
+            "desSO   desSO   desSO   .   imgSO"
+            "desSO   desSO   desSO   .   imgSO"
+            ;
+        }
+        &__descripcion {
+            width: 700px;
+            color: azure;
+            padding: 20px;
+            font-size: 20px;
+        
+            grid-area: desSO;
+        }
+    }
+
+    &--contenedorImagen {
+        grid-area: imgSO;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &--fav {
+        font-size: 12px;
+        color: azure;
+        padding: 10px;
+        background-color: $sonyT;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        grid-area: favSO;
+    }
+
+    &--encabezado {
+        background-color: sonyT;
+        color: azure;
+        padding: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        grid-area: tiSO;
+    }
+}
+
+.SE {
+    &--compania {
+        &__tarjetas {
+            background-color: $segaF;
+            margin: 20px;
+            padding: 20px;
+            
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "tiSE   .   .   .   favSE"
+            "desSE   desSE   desSE   .   imgSE"
+            "desSE   desSE   desSE   .   imgSE"
+            ;
+        }
+        &__descripcion {
+            width: 700px;
+            color: azure;
+            padding: 20px;
+            font-size: 20px;
+        
+            grid-area: desSE;
+        }
+    }
+
+    &--contenedorImagen {
+        grid-area: imgSE;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &--fav {
+        font-size: 12px;
+        color: azure;
+        padding: 10px;
+        background-color: $sonyT;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        grid-area: favSE;
+    }
+
+    &--encabezado {
+        background-color: $sonyT;
+        color: azure;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        grid-area: tiSE;
+    }
+}

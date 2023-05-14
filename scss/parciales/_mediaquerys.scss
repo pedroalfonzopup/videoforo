@@ -1,0 +1,213 @@
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+/* MODO TABLET *//* MODO TABLET *//* MODO TABLET */
+
+@media screen and (max-width: 1024px) {
+    .navbar--p {
+        gap: 70px;
+    }
+
+    .navbar-toggler {
+        color: white;
+        box-shadow: 0 0 25px rgb(255, 208, 0);
+        color: rgb(255, 255, 255);
+        border: solid 1px rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    
+    .navbar-nav {
+        border: rgb(16, 4, 83) 3px solid;
+        background-color: rgb(6, 6, 70); 
+        width: 300px;
+        position: absolute;
+        right: 5px;
+        top: 65px;
+        padding: 5px;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    .nav-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .index {
+        &--container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &--text p{
+            font-size: 18px;
+        }
+
+        &--text h1{
+            font-size: 1.5rem;
+        }
+
+        &--contenedorImage {
+            width: 400px;
+        }
+    }
+
+    .N {
+        &--compania__descripcion {
+            font-size: 14px;
+            width: 550px;
+        }
+    }
+
+    .SE {
+        &--compania__descripcion {
+            font-size: 14px;
+            width: 550px;
+        }
+    }
+
+    .SO {
+        &--compania__descripcion {
+            font-size: 14px;
+            width: 550px;
+        }
+    }
+
+    .contacto {
+        &--main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--container {
+            width: 450px;
+        }
+    }
+
+    .footer--contacto {
+        position: static;
+    }
+}
+
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+/* MODO MOBILE *//* MODO MOBILE *//* MODO MOBILE */
+
+
+@media screen and (max-width: 600px) {
+    .navbar-movil {
+        width: 90%;
+    }
+
+    .index {
+        &--text h1{
+        font-size: 1.5rem;
+        }
+        &--contenedorImagen {
+        width: 200px;
+        margin: 10;
+        }
+    }
+    .navbar-nav {
+        width: 200px;
+    }
+
+    .nav-link {
+        font-size: x-large;
+    }
+
+    .noticias {
+        &--contenedorImagen {
+            width: 200px;
+        }
+
+        &--tarjetas h3 {
+            width: 200px;
+        }
+    }
+
+    .SO {
+        &--fav {
+            display: none;
+        }
+        &--contenedorImagen {
+            display: none;
+        }
+        &--compania__descripcion {
+            width: 300px;
+        }
+        &--compania__tarjetas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .N {
+        &--fav {
+            display: none;
+        }
+        &--contenedorImagen {
+            display: none;
+        }
+        &--compania__descripcion {
+            width: 300px;
+        }
+        &--compania__tarjetas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .SE {
+        &--fav {
+            display: none;
+        }
+        &--contenedorImagen {
+            display: none;
+        }
+        &--compania__descripcion {
+            width: 300px;
+        }
+        &--compania__tarjetas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .contacto {
+        &--container {
+            width: 350px;
+        }
+        &--container h2 {
+            font-size: 12px;
+        }
+        &--container p {
+            font-size: 10px;
+        }
+    }
+
+    .videojuegos--categorias {
+        display: none;
+    }
+
+    .footer--contacto {
+        position: static;
+    }
+}

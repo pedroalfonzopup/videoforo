@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Dictator</title>
+    <meta name="keywords" content="contacto, videojuegos">
+    <meta name="description" content="Contactate con nosotros!">
+    <title> Contacto | VideoDictator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="body-color">
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg header-p">
-            <div class="container-fluid navbar-p">
-                <div class="icon-navbar">
+        <nav class="navbar--color navbar navbar-expand-lg header-p">
+            <div class="container-fluid navbar--p navbar-movil">
+                <div class="navbar--icon">
                     <img src="../img/gameLoveIcon.png" alt="Icono">
                 </div>
-                <div class="navbar-start">
+                <div class="navbar--start">
                     <a href="../index.html">START</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav navbar-menu">
+                    <ul class="navbar-nav navbar--menu">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="./noticias.html">Noticias</a>
                         </li>
@@ -43,48 +45,54 @@
         </nav>
     </header>
     <main>
-        <div class="main-contacto">
+        <div class="contacto--main">
             
-            <div class="contenedor-contacto">
+            <div class="contacto--container">
                 <h2>¿QUÉ TE PARECIÓ NUESTRA PÁGINA?</h2>
                 <p>Cuentanos lo que te parece podríamos mejorar, a su vez como lo que te gusta o te parece que falta!!!</p>
-                <div class="contenedor-imagen-contacto">
+                <div class="contacto--contenedorImagen">
                     <img src="../img/despedidaLuigi.jpg" alt="Luigi despidiendose">
                 </div>
             </div>
             
-            <div class="contenedor-formulario">
+            <div class="contacto--form__container">
                 <form>
-                    <div class="formulario">
+                    <div class="contacto--form">
                         <label for="nombre">Nombre</label>
                         <input id="nombre" type="text" >
                     </div>
-                    <div class="formulario">
+                    <div class="contacto--form">
                         <label for="email">Email</label>
                         <input id="email" type="email">
                     </div>
-                    <div class="formulario">
+                    <div class="contacto--form">
                         <label for="textarea">Opinion</label>
-                        <textarea name="textarea" cols="10" rows="8" id="textarea" equired="text" placeholder="Dinos tu opinión" class="texto"></textarea>
+                        <textarea name="textarea" cols="10" rows="8" id="textarea" equired="text" placeholder="Dinos tu opinión" class="contacto--form__text"></textarea>
                     </div>
-                    <div class="boton_container">
-                        <input class="boton" type="submit" value="ENVIAR">
-                        <input class="boton" type="reset" value="RESET">
+                    <div class="contacto--contenedorBoton">
+                        <input class="contacto--contenedorBoton__boton" type="submit" value="ENVIAR">
+                        <input class="contacto--contenedorBoton__boton" type="reset" value="RESET">
                     </div>
                 </form>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="icon-footer">
-            <div class="icon-container">
+    <footer class="footer footer--contacto">
+        <div class="footer--icon">
+            <div class="footer--icon__container">
+                <a href="https://es-la.facebook.com">
                 <img src="../img/facebook.png" alt="Icono Facebook">
+                </a>
             </div>
-            <div class="icon-container">
+            <div class="footer--icon__container">
+                <a href="https://twitter.com/?lang=es">
                 <img src="../img/twitter.png" alt="Icono Twitter">
+                </a>
             </div>
-            <div class="icon-container">
+            <div class="footer--icon__container">
+                <a href="https://www.instagram.com">
                 <img src="../img/instagram.png" alt="Icono instagram">
+                </a>
             </div>
         </div>
     </footer>

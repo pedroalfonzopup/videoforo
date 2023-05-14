@@ -1,0 +1,587 @@
+.index--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 0 1 100%; }
+
+.index--text {
+  padding: 40px;
+  margin: 60px;
+  background-color: darkcyan;
+  border: 4px solid #0f5e5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch; }
+  .index--text h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800; }
+  .index--text p {
+    font-size: 24px;
+    color: black; }
+  .index--text a {
+    text-decoration: none;
+    color: black; }
+
+.index--contenedorImage {
+  width: 400px;
+  margin: 80px; }
+  .index--contenedorImage img {
+    width: 100%; }
+
+.noticias--main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.noticias--container {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 30px; }
+
+.noticias--tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #020249;
+  padding: 20px;
+  margin: 50px; }
+  .noticias--tarjetas h3 {
+    width: 550px;
+    text-align: center;
+    background-color: azure; }
+  .noticias--tarjetas a {
+    text-decoration: none;
+    color: black; }
+
+.noticias--contenedorImagen {
+  width: 550px; }
+  .noticias--contenedorImagen img {
+    width: 100%; }
+
+.videojuegos--main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1 0 100%; }
+
+.videojuegos--categorias {
+  width: 210px;
+  padding: 30px;
+  background-color: darkcyan;
+  border-right: 3px solid #0e7070;
+  font-family: 'Courier New', Courier, monospace;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px; }
+  .videojuegos--categorias h2 {
+    text-align: center;
+    font-size: 1rem; }
+  .videojuegos--categorias li {
+    font-size: 1rem; }
+
+.videojuegos--tarjetas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #2541bd;
+  width: 250px;
+  padding: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 20px; }
+
+.videojuegos--container {
+  font-family: monospace;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.videojuegos--triangulo {
+  width: 80px; }
+  .videojuegos--triangulo img {
+    width: 100%; }
+
+.videojuegos--contenedorImagen {
+  width: 150px; }
+  .videojuegos--contenedorImagen img {
+    width: 100%; }
+
+.compania--main {
+  font-family: 'Courier New', Courier, monospace; }
+
+.compania--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contacto--main {
+  margin: 25px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: azure; }
+
+.contacto--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #224ed1;
+  border: 3px solid darkblue;
+  width: 520px;
+  padding: 20px;
+  margin-bottom: 15px; }
+  .contacto--container h2 {
+    font-size: 18px; }
+  .contacto--container p {
+    text-align: center;
+    font-size: 16px; }
+
+.contacto--form {
+  font-size: 1.3em;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacto--form__container {
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #224ed1;
+    border: 3px solid darkblue;
+    color: azure; }
+  .contacto--form__text {
+    width: 90%;
+    margin-bottom: 10px; }
+
+.contacto--contenedorBoton {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center; }
+  .contacto--contenedorBoton__boton {
+    background-color: #00004f;
+    margin-bottom: 15px;
+    border: 3px solid #000025;
+    width: 82px;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem; }
+
+.contacto--contenedorImagen {
+  padding: 10px; }
+  .contacto--contenedorImagen img {
+    width: 100%; }
+
+.header-p {
+  background-color: #060646;
+  border-bottom: 3px solid #030320;
+  padding: 10px;
+  z-index: 2; }
+
+.navbar--color, .footer {
+  background-color: #060646; }
+
+.navbar--menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 0 1 100%; }
+  .navbar--menu li {
+    padding: 6px;
+    border: solid 1px white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.5s; }
+    .navbar--menu li a {
+      color: white; }
+      .navbar--menu li a:hover {
+        color: white; }
+  .navbar--menu li:nth-child(1) {
+    box-shadow: 0 0 25px #4f9; }
+    .navbar--menu li:nth-child(1):hover {
+      transition: all 0.5s;
+      box-shadow: 0 0 33px #e0e0e0; }
+  .navbar--menu li:nth-child(2) {
+    box-shadow: 0 0 25px #ff581b; }
+    .navbar--menu li:nth-child(2):hover {
+      transition: all 0.5s;
+      box-shadow: 0 0 30px #e0e0e0; }
+  .navbar--menu li:nth-child(3) {
+    box-shadow: 0 0 25px #fd01fd; }
+    .navbar--menu li:nth-child(3):hover {
+      transition: all 0.5s;
+      box-shadow: 0 0 30px #e0e0e0; }
+  .navbar--menu li:nth-child(4) {
+    box-shadow: 0 0 25px #1cc9fd; }
+    .navbar--menu li:nth-child(4):hover {
+      transition: all 0.5s;
+      box-shadow: 0 0 30px #e0e0e0; }
+
+.navbar--start {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 25px #ffd000;
+  padding: 6px;
+  color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.5s; }
+  .navbar--start:hover {
+    transition: all 0.5s;
+    box-shadow: 0 0 33px #e0e0e0; }
+
+.navbar--p {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 100px;
+  height: 44px; }
+
+.navbar--icon img {
+  width: 44px;
+  height: 44px; }
+
+.footer {
+  border-top: 3px solid #030320;
+  padding: 8px; }
+  .footer--icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem; }
+    .footer--icon__container {
+      width: 50px;
+      height: 50px;
+      background-color: silver;
+      padding: 8px;
+      border-radius: 20px; }
+      .footer--icon__container img {
+        width: 100%; }
+  .footer--contacto {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%; }
+
+.N--compania__tarjetas {
+  background-color: #7c0000;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "tiN   .   .   .   favN" "desN   desN   desN   .   imgN" "desN   desN   desN   .   imgN"; }
+
+.N--compania__descripcion {
+  width: 700px;
+  color: azure;
+  padding: 20px;
+  font-size: 20px;
+  grid-area: desN; }
+
+.N--contenedorImagen {
+  grid-area: imgN; }
+  .N--contenedorImagen img {
+    width: 100%; }
+
+.N--fav {
+  font-size: 12px;
+  color: azure;
+  padding: 10px;
+  background-color: #df1a41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: favN; }
+
+.N--encabezado {
+  background-color: #df1a41;
+  color: azure;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: tiN; }
+
+.SO--compania__tarjetas {
+  background-color: #010a33;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "tiSO   .   .   .   favSO" "desSO   desSO   desSO   .   imgSO" "desSO   desSO   desSO   .   imgSO"; }
+
+.SO--compania__descripcion {
+  width: 700px;
+  color: azure;
+  padding: 20px;
+  font-size: 20px;
+  grid-area: desSO; }
+
+.SO--contenedorImagen {
+  grid-area: imgSO; }
+  .SO--contenedorImagen img {
+    width: 100%; }
+
+.SO--fav {
+  font-size: 12px;
+  color: azure;
+  padding: 10px;
+  background-color: #249ed6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: favSO; }
+
+.SO--encabezado {
+  background-color: sonyT;
+  color: azure;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: tiSO; }
+
+.SE--compania__tarjetas {
+  background-color: #08249e;
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "tiSE   .   .   .   favSE" "desSE   desSE   desSE   .   imgSE" "desSE   desSE   desSE   .   imgSE"; }
+
+.SE--compania__descripcion {
+  width: 700px;
+  color: azure;
+  padding: 20px;
+  font-size: 20px;
+  grid-area: desSE; }
+
+.SE--contenedorImagen {
+  grid-area: imgSE; }
+  .SE--contenedorImagen img {
+    width: 100%; }
+
+.SE--fav {
+  font-size: 12px;
+  color: azure;
+  padding: 10px;
+  background-color: #249ed6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: favSE; }
+
+.SE--encabezado {
+  background-color: #249ed6;
+  color: azure;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: tiSE; }
+
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+/* MODO TABLET */
+@media screen and (max-width: 1024px) {
+  .navbar--p {
+    gap: 70px; }
+  .navbar-toggler {
+    color: white;
+    box-shadow: 0 0 25px #ffd000;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px; }
+  .navbar-nav {
+    border: #100453 3px solid;
+    background-color: #060646;
+    width: 300px;
+    position: absolute;
+    right: 5px;
+    top: 65px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center; }
+  .nav-link {
+    text-align: center;
+    font-size: xx-large; }
+  .nav-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%; }
+  .index--container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .index--text p {
+    font-size: 18px; }
+  .index--text h1 {
+    font-size: 1.5rem; }
+  .index--contenedorImage {
+    width: 400px; }
+  .N--compania__descripcion {
+    font-size: 14px;
+    width: 550px; }
+  .SE--compania__descripcion {
+    font-size: 14px;
+    width: 550px; }
+  .SO--compania__descripcion {
+    font-size: 14px;
+    width: 550px; }
+  .contacto--main {
+    display: flex;
+    flex-direction: column; }
+  .contacto--container {
+    width: 450px; }
+  .footer--contacto {
+    position: static; } }
+
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+/* MODO MOBILE */
+@media screen and (max-width: 600px) {
+  .navbar-movil {
+    width: 90%; }
+  .index--text h1 {
+    font-size: 1.5rem; }
+  .index--contenedorImagen {
+    width: 200px;
+    margin: 10; }
+  .navbar-nav {
+    width: 200px; }
+  .nav-link {
+    font-size: x-large; }
+  .noticias--contenedorImagen {
+    width: 200px; }
+  .noticias--tarjetas h3 {
+    width: 200px; }
+  .SO--fav {
+    display: none; }
+  .SO--contenedorImagen {
+    display: none; }
+  .SO--compania__descripcion {
+    width: 300px; }
+  .SO--compania__tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .N--fav {
+    display: none; }
+  .N--contenedorImagen {
+    display: none; }
+  .N--compania__descripcion {
+    width: 300px; }
+  .N--compania__tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .SE--fav {
+    display: none; }
+  .SE--contenedorImagen {
+    display: none; }
+  .SE--compania__descripcion {
+    width: 300px; }
+  .SE--compania__tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .contacto--container {
+    width: 350px; }
+  .contacto--container h2 {
+    font-size: 12px; }
+  .contacto--container p {
+    font-size: 10px; }
+  .videojuegos--categorias {
+    display: none; }
+  .footer--contacto {
+    position: static; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #bcf2ff;
+  font-family: monospace; }
+  body a {
+    color: white;
+    text-decoration: none; }
+
+.titulosBarras {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #8b8b8b;
+  border: 6px solid #636363; }
+  .titulosBarras h1 {
+    font-weight: 800;
+    animation-name: titulo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
+
+@keyframes titulo {
+  0% {
+    color: #17009b; }
+  25% {
+    color: aqua; }
+  50% {
+    color: #01134e; }
+  75% {
+    color: aqua; }
+  100% {
+    color: #17009b; } }

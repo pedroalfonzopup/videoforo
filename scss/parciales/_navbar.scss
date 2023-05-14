@@ -1,0 +1,112 @@
+
+.header-p {
+    background-color: $color_navbar;
+    border-bottom: 3px solid rgb(3, 3, 32);
+    padding: 10px;
+
+    z-index: 2;
+}
+
+.navbar {
+    &--color {
+        background-color: $color_navbar;
+    }
+
+    &--menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex: 0 1 100%;
+
+        & li {
+            padding: 6px;
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 5px;
+            font-size: 1rem;
+
+            transition: all 0.5s;
+            & a {
+                color: rgb(255, 255, 255);
+
+                &:hover {
+                    color: rgb(255, 255, 255);
+
+                }
+            }
+        }
+
+        & li:nth-child(1) {
+            box-shadow: 0 0 25px #4f9;
+
+            &:hover {
+                transition: all 0.5s;
+                box-shadow: 0 0 33px rgb(224, 224, 224);
+            }
+        }
+        & li:nth-child(2) {
+            box-shadow: 0 0 25px rgb(255, 88, 27);
+
+            &:hover {
+                transition: all 0.5s;
+                box-shadow: 0 0 30px rgb(224, 224, 224);
+            }
+        }
+        & li:nth-child(3) {
+            box-shadow: 0 0 25px rgb(253, 1, 253);
+
+            &:hover {
+                transition: all 0.5s;
+                box-shadow: 0 0 30px rgb(224, 224, 224);
+            }
+        }
+        & li:nth-child(4) {
+            box-shadow: 0 0 25px rgb(28, 201, 253);
+
+            &:hover {
+                transition: all 0.5s;
+                box-shadow: 0 0 30px rgb(224, 224, 224);
+            }
+        }
+
+        
+    }
+
+    &--start {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        box-shadow: 0 0 25px rgb(255, 208, 0);
+        padding: 6px;
+        color: rgb(255, 255, 255);
+        border: solid 1px rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 1rem;
+
+        transition: all 0.5s;
+
+        &:hover {
+            transition: all 0.5s;
+            box-shadow: 0 0 33px rgb(224, 224, 224);
+        }
+    }
+
+    &--p {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 100px;
+        height: 44px;
+    }
+
+    &--icon {
+        & img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
