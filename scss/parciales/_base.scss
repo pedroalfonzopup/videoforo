@@ -5,11 +5,20 @@
 }
 
 body {
-    background-color: rgb(188, 242, 255);
-    font-family: monospace;
+    background-image: url("../../img/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: 'Courier New', Courier, monospace;
     & a {
         color: rgb(255, 255, 255);
         text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+        }
     }
 }
 
@@ -20,12 +29,14 @@ body {
     margin-top: 20px;
     padding: 20px;
 
-    background-color: $color_titulos;
-    border: 6px solid $color_titulosBordes;
+    background: rgb(62,62,62);
+    background: linear-gradient(90deg, rgba(62,62,62,1) 0%, rgba(142,142,142,1) 49%, rgba(62,62,62,1) 100%);
+    border: 15px solid $color_titulosBordes;
+    border-style: groove;
+
+    font-family: "Press Start 2P";
 
     & h1 {
-        font-weight: 800;
-
         animation-name: titulo;
         animation-duration: 10s;
         animation-iteration-count: infinite;
@@ -35,22 +46,22 @@ body {
 
 @keyframes titulo{
     0%{
-        color: rgb(23, 0, 155);
+        color: darkred;
     }
 
     25%{
-        color:aqua;
+        color: orangered;
     }
 
     50%{
-        color: rgb(1, 19, 78);
+        color: rgb(255, 217, 0);
     }
 
     75%{
-        color: aqua;
+        color: orangered;
     }
 
     100%{
-        color: rgb(23, 0, 155);
+        color: darkred;
     }
 }
